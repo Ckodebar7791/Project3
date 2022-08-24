@@ -1,0 +1,43 @@
+body
+{
+font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 768px)
+{
+@media screen and (max-width: 360px)
+{}
+.logo
+{
+box-shadow: 1px 1px 1px #e1e1e1;
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+.logo img
+{
+width: 45%;
+margin-left: 15%;
+margin-top: 5%;
+margin-bottom: 2%;
+}
+.logo a
+{
+color: black;
+padding-left:30px;
+text-decoration: none;
+}
+div {
+    background-image:url(C:\Users\yanis\OneDrive\Bureau\Projet3\Maquettes_Ohmyfood\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    background-size: auto;
+    background-position: center;
+  }
+.carte
+{
+background-color: #99E2D0;
+border-radius: 50px 50px 0px 0px;
+margin-top: 0px;
+z-index: 2;
+}
+}
