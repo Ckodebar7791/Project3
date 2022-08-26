@@ -73,12 +73,6 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4392156863);
     padding-top: 20px;
   }
-  .fonction h2 {
-    margin-left: 20px;
-  }
-  ul {
-    list-style-type: none;
-  }
   .element a {
     color: black;
     text-decoration: none;
@@ -97,6 +91,12 @@ body {
   .element i {
     margin-right: 20px;
     color: #9356DC;
+  }
+  .fonction h2 {
+    margin-left: 20px;
+  }
+  .fonction ul {
+    list-style-type: none;
   }
   .restaurant {
     background-color: #99E2D0;
@@ -122,6 +122,14 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .container p {
+    background-color: #99e2d0;
+    color: #008766;
+    display: flex;
+    margin-left: 260px;
+    position: absolute;
+    padding: 5px;
+  }
   .info {
     background-color: white;
     width: 90%;
@@ -131,6 +139,11 @@ body {
   }
   .info h3 {
     padding-left: 10px;
+  }
+  .align {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .align span {
     padding-left: 10px;
@@ -143,10 +156,8 @@ body {
     text-decoration: none;
     color: black;
   }
-  .align {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  .align a:active {
+    color: red;
   }
   footer {
     background-color: #353535;
@@ -165,6 +176,7 @@ body {
   }
   .foot ul {
     margin-left: -25px;
+    list-style-type: none;
   }
   .foot li {
     margin-bottom: 10px;
