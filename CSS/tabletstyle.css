@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   @-webkit-keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -19,41 +19,34 @@ body {
       transform: rotate(359deg);
     }
   }
-  @-webkit-keyframes loader {
+  @-webkit-keyframes hidden_loader {
     0% {
       opacity: 1;
-      visibility: visible;
-      z-index: 999;
-      height: 100vh;
     }
     100% {
       opacity: 0;
       visibility: hidden;
-      z-index: -999;
-      height: 0vh;
     }
   }
-  @keyframes loader {
+  @keyframes hidden_loader {
     0% {
       opacity: 1;
-      visibility: visible;
-      z-index: 999;
-      height: 100vh;
     }
     100% {
       opacity: 0;
       visibility: hidden;
-      z-index: -999;
-      height: 0vh;
     }
   }
   .load {
     background-color: white;
     position: fixed;
+    height: 100vh;
     width: 100%;
+    z-index: 999;
+    -webkit-animation: hidden_loader 3s 0s;
+            animation: hidden_loader 3s 0s;
     opacity: 0;
-    -webkit-animation: loader 3s 0s;
-            animation: loader 3s 0s;
+    visibility: hidden;
   }
   .load #circle {
     display: block;
@@ -102,7 +95,7 @@ body {
   }
   .presentation {
     width: 100%;
-    background-color: #F5F5F5;
+    background-color: #99E2D0;
     display: flex;
     flex-direction: column;
   }
@@ -111,7 +104,7 @@ body {
     margin-left: 15%;
     text-align: center;
   }
-  .presentation p {
+  .presentation span {
     width: 70%;
     margin-left: 14%;
     text-align: center;
@@ -226,7 +219,7 @@ body {
   }
   .heart_content {
     position: relative;
-    right: 60px;
+    right: 30px;
   }
   .heart_content .empty {
     position: absolute;
@@ -281,4 +274,4 @@ body {
     color: white;
     text-decoration: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=tabletstyle.css.map */

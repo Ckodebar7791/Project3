@@ -5,9 +5,9 @@ body
 {
 font-family: 'Roboto', sans-serif;
 }
-@media screen and (max-width: 768px)
+@media screen and (min-width: 769px)
 {
-@media screen and (max-width: 360px)
+@media screen and (max-width: 992px)
 {}
 @keyframes spin
 {
@@ -20,29 +20,27 @@ transform: rotate(0deg);
 transform: rotate(359deg);
 }
 }
-@keyframes loader {
+@keyframes hidden_loader {
 0%
 {
 opacity: 1;
-visibility: visible;
-z-index: 999;
-height: 100vh;
 }
 100%
 {
 opacity: 0;
-visibility: hidden;
-z-index: -999;
-height: 0vh;
+visibility: hidden; 
 }   
 }
 .load
 {
 background-color: white;
 position: fixed;
+height: 100vh;
 width: 100%;
+z-index: 999;
+animation: hidden_loader 3s 0s;
 opacity: 0;
-animation: loader 3s 0s;
+visibility: hidden; 
 #circle {
 display: block;
 position: absolute;
@@ -96,7 +94,7 @@ font-weight: bold;
 .presentation
 {
 width: 100%;
-background-color: #F5F5F5;
+background-color: #99E2D0;
 display: flex;
 flex-direction: column;
 h2
@@ -105,7 +103,7 @@ width: 70%;
 margin-left: 15%;
 text-align: center;
 }
-p
+span
 {
 width: 70%;
 margin-left: 14%;
@@ -242,7 +240,7 @@ color: black;
 .heart_content
 {
 position: relative;
-right:60px;
+right:30px;
 .empty
 {
 position: absolute;
